@@ -15,6 +15,7 @@ function createListItem(text, id) {
     let li = document.createElement("li");
     let link = document.createElement("a");
     link.textContent = text;
+    link.setAttribute("href", "#");
     li.appendChild(link);
     li.setAttribute("id", id);
     return li;
