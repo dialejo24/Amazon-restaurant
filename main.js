@@ -1,1 +1,1 @@
-console.log("probando");
+(()=>{let e=document.getElementById("content"),t=document.createElement("header"),n=document.createElement("nav"),d=document.createElement("ul");function a(e,t){let n=document.createElement("li"),d=document.createElement("a");return d.textContent=e,n.appendChild(d),n.setAttribute("id",t),n}d.appendChild(a("Home","home")),d.appendChild(a("Menu","menu")),d.appendChild(a("Contact","contact")),n.appendChild(d),t.appendChild(n),e.appendChild(t)})();
