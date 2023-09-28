@@ -1,3 +1,5 @@
+import './style.css';
+
 let content = document.getElementById("content");
 let header = document.createElement("header");
 let nav = document.createElement("nav");
