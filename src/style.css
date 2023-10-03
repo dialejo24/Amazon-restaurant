@@ -78,12 +78,14 @@ a:hover::before {
     margin-inline: auto;
     width: 90%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap:2em;
 }
 
 .homeImage {
     align-self: center;
+    display: block;
+    margin-top: 2em;
+    max-width: 600px;
+    margin-inline: auto;
 }
 
 .restaurant_description {
@@ -137,9 +139,14 @@ a:hover::before {
     font-weight: bold;
 }
 
-@media (min-width: 942px) {
+@media (min-width: 940px) {
+    .containerWidth {
+        gap: 2em;
+        grid-template-columns: 1fr 1fr;
+    }
     .homeImage {
         order: 2;
+        margin-top: 0;
     }
 }
 
