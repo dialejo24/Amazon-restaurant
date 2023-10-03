@@ -73,6 +73,8 @@ a:hover::before {
     width: 100%;
 }
 
+
+/* Home page style */
 .containerWidth {
     max-width: 1000px;
     margin-inline: auto;
@@ -149,4 +151,5 @@ a:hover::before {
         margin-top: 0;
     }
 }
+/* ---------- */
 
