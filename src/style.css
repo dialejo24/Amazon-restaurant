@@ -84,7 +84,7 @@ a:hover::before {
     align-self: center;
     display: block;
     margin-top: 2em;
-    max-width: 600px;
+    width: min(100%, 600px);
     margin-inline: auto;
 }
 
