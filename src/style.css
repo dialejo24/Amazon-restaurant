@@ -7,6 +7,12 @@
     --dark-grayish-blue: hsl(236, 13%, 42%);
 }
 
+@font-face {
+    font-family: 'Inter';
+    src: url("./fonts/Inter-VariableFont_slnt\,wght.ttf");
+    font-style: normal;
+}
+
 *,
 *::after,
 *::before {
@@ -16,12 +22,24 @@
 }
 
 body {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-family: 'Inter';
+   font-weight: normal;
+}
+
+img {
+    max-width: 100%;
 }
 
 header {
     width: 100%;
     background-color: var(--soft-orange);
+}
+
+h1 {
+    color: var(--soft-orange);
+    font-size: clamp(2.5rem, 2rem + 1.5vw, 5rem);
+    text-align: center;  
+    margin-block: .8em .4em;  
 }
 
 ul {
@@ -37,6 +55,7 @@ a {
     padding: 1em;
     position: relative;
     color: var(--very-dark-blue);
+    font-weight: bold;
 }
 
 a::before {
@@ -46,11 +65,81 @@ a::before {
     left:0;
     width: 0;
     height: 2px;
-    background-color: red;
+    background-color: black;
     transition: width .2s ease;
 }
 
 a:hover::before {
     width: 100%;
+}
+
+.containerWidth {
+    max-width: 1000px;
+    margin-inline: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap:2em;
+}
+
+.homeImage {
+    align-self: center;
+}
+
+.restaurant_description {
+    line-height: 1.5;
+    width: 90%;
+    margin-inline: auto;
+    text-align:justify;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-block: 1em 2em;
+}
+
+.wrapper > div {
+    padding: 1em;
+    text-align: center;
+}
+
+.wrapper > div:first-child {
+    background-color: var(--dark-grayish-blue);
+}
+.wrapper > div:last-child {
+    background-color: var(--soft-orange);
+}
+
+.menuTitle {
+    font-size: 1.4rem;
+}
+
+.plate {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-block: .3em .2em;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.wrapper div:first-child .plate {
+    color: var(--soft-orange);
+    
+}
+
+.wrapper div:last-child .plate {
+    color: var(--dark-grayish-blue);
+}
+
+.platePrice {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+@media (min-width: 942px) {
+    .homeImage {
+        order: 2;
+    }
 }
 
