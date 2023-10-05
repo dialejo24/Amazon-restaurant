@@ -1,4 +1,5 @@
 import image from './images/food.jpg';
+export {getHomeDiv, createElement};
 
 let homeDiv = document.createElement("div");
 
@@ -28,7 +29,7 @@ let dailyMenu = createElement("div");
 let menuTitle = createElement("h3", "Daily Menu", "menuTitle");
 let availableDays = createElement("p", "From monday to friday");
 let menuDescription = createElement("p", "main course + 1 beverage + 1 dessert", "plate");
-let menuPrice = createElement("p", "$13", "platePrice");
+let menuPrice = createElement("p", "$15", "platePrice");
 dailyMenu.appendChild(menuTitle);
 dailyMenu.appendChild(availableDays);
 dailyMenu.appendChild(menuDescription);
@@ -38,7 +39,7 @@ let specialDish = createElement("div");
 let dishTitle = createElement("h3", "Special menu", "menuTitle");
 let dishAvailability = createElement("p", "Saturday");
 let dishDescription = createElement("p","Exotic amazonian dish", "plate");
-let dishPrice = createElement("p", "$20", "platePrice");
+let dishPrice = createElement("p", "$25", "platePrice");
 specialDish.appendChild(dishTitle);
 specialDish.appendChild(dishAvailability);
 specialDish.appendChild(dishDescription);
@@ -50,13 +51,15 @@ mainContent.appendChild(wrapper);
 
 homeDiv.appendChild(mainContent);
 
-export default function getHomeDiv() {
+function getHomeDiv() {
     return homeDiv;
 }
 
 function createElement(type, text = "", classes = "") {
     let element = document.createElement(type);
-    element.className = classes;
+    if (classes) {
+        element.className = classes;
+    }
     if (text) {
         element.textContent = text;
     }

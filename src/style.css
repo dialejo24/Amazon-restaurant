@@ -153,3 +153,48 @@ a:hover::before {
 }
 /* ---------- */
 
+/* Menu page style */
+.menu {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--soft-orange);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-block: .8em;
+}
+
+.dishes {
+    max-width: 900px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: min(100%, 400px); 
+    justify-content: center;
+    gap: 2.5em;
+}
+
+.dishes > div {
+    text-align: center;
+    background-color: var(--soft-orange);
+    padding: 1.5em .5em;
+    border-radius: 20px;
+}
+
+.dishes > div > h3 {
+    font-size: 1.5rem;
+}
+
+.dishes > div > p {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.dishes > div:last-child {
+    margin-bottom: 2em;
+}
+
+.dishImg {
+    width: min(100%, 250px);
+    display: block;
+    margin-inline: auto;
+    margin-block: 1em .7em;
+}
