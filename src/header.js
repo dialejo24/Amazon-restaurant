@@ -21,7 +21,7 @@ function createListItem(text, id) {
     let link = document.createElement("a");
     link.textContent = text;
     link.setAttribute("href", "#");
+    link.setAttribute("id", id);
     li.appendChild(link);
-    li.setAttribute("id", id);
     return li;
 }
