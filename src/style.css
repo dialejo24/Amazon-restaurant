@@ -24,6 +24,7 @@
 body {
    font-family: 'Inter';
    font-weight: normal;
+   overflow-x: hidden;
 }
 
 img {
@@ -31,7 +32,7 @@ img {
 }
 
 header {
-    width: 100%;
+    width: 100vw;
     background-color: var(--soft-orange);
 }
 
@@ -222,3 +223,8 @@ a:hover::before {
     margin-top: 1em;
 }
 /* --------------- */
+
+.selectedLink {
+    background-color: black;
+    color: var(--soft-orange);
+}
