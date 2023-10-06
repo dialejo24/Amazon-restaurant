@@ -1,4 +1,5 @@
 import './style.css';
+export {getHeader};
 
 let header = document.createElement("header");
 let nav = document.createElement("nav");
@@ -11,7 +12,7 @@ ul.appendChild(createListItem("Contact", "contact"));
 nav.appendChild(ul);
 header.appendChild(nav);
 
-export default function getHeader() {
+function getHeader() {
     return header;
 }
 

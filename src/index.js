@@ -1,4 +1,4 @@
-import getHeader from "./header";
+import {getHeader} from "./header";
 import { getHomeDiv } from "./home";
 import { getMenuDiv } from "./menu";
 
