@@ -1,5 +1,5 @@
-import image from './images/food.jpg';
-export {getHomeDiv, createElement};
+import image from "./images/food.jpg";
+export { getHomeDiv, createElement };
 
 let homeDiv = document.createElement("div");
 
@@ -28,7 +28,11 @@ wrapper.classList.add("wrapper");
 let dailyMenu = createElement("div");
 let menuTitle = createElement("h3", "Daily Menu", "menuTitle");
 let availableDays = createElement("p", "From monday to friday");
-let menuDescription = createElement("p", "main course + 1 beverage + 1 dessert", "plate");
+let menuDescription = createElement(
+  "p",
+  "main course + 1 beverage + 1 dessert",
+  "plate"
+);
 let menuPrice = createElement("p", "$15", "platePrice");
 dailyMenu.appendChild(menuTitle);
 dailyMenu.appendChild(availableDays);
@@ -38,7 +42,7 @@ dailyMenu.appendChild(menuPrice);
 let specialDish = createElement("div");
 let dishTitle = createElement("h3", "Special menu", "menuTitle");
 let dishAvailability = createElement("p", "Saturday");
-let dishDescription = createElement("p","Exotic amazonian dish", "plate");
+let dishDescription = createElement("p", "Exotic amazonian dish", "plate");
 let dishPrice = createElement("p", "$25", "platePrice");
 specialDish.appendChild(dishTitle);
 specialDish.appendChild(dishAvailability);
@@ -52,16 +56,16 @@ mainContent.appendChild(wrapper);
 homeDiv.appendChild(mainContent);
 
 function getHomeDiv() {
-    return homeDiv;
+  return homeDiv;
 }
 
 function createElement(type, text = "", classes = "") {
-    let element = document.createElement(type);
-    if (classes) {
-        element.className = classes;
-    }
-    if (text) {
-        element.textContent = text;
-    }
-    return element;
+  let element = document.createElement(type);
+  if (classes) {
+    element.className = classes;
+  }
+  if (text) {
+    element.textContent = text;
+  }
+  return element;
 }

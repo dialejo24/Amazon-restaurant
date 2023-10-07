@@ -1,5 +1,5 @@
-import './style.css';
-export {getHeader};
+import "./style.css";
+export { getHeader };
 
 let header = document.createElement("header");
 let nav = document.createElement("nav");
@@ -13,15 +13,15 @@ nav.appendChild(ul);
 header.appendChild(nav);
 
 function getHeader() {
-    return header;
+  return header;
 }
 
 function createListItem(text, id) {
-    let li = document.createElement("li");
-    let link = document.createElement("a");
-    link.textContent = text;
-    link.setAttribute("href", "#");
-    link.setAttribute("id", id);
-    li.appendChild(link);
-    return li;
+  let li = document.createElement("li");
+  let link = document.createElement("a");
+  link.textContent = text;
+  link.setAttribute("href", "#");
+  link.setAttribute("id", id);
+  li.appendChild(link);
+  return li;
 }

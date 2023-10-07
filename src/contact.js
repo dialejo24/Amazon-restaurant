@@ -1,5 +1,5 @@
 import { createElement } from "./home";
-export {getContactDiv};
+export { getContactDiv };
 
 let contactDiv = createElement("div", "", "contactDiv");
 let contactTitle = createElement("h2", "Contact us");
@@ -14,5 +14,5 @@ contactDiv.appendChild(email);
 contactDiv.appendChild(emailAdress);
 
 function getContactDiv() {
-    return contactDiv;
+  return contactDiv;
 }
